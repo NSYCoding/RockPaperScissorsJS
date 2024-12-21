@@ -43,3 +43,7 @@ body {
 .none {
     display: none;
 }
+
+button {
+    color: black;
+}

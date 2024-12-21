@@ -3,6 +3,7 @@ const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const buttons = document.getElementById('buttons');
 const h2 = document.getElementById('h2');
+const info  = document.getElementById('info');
 let player;
 let computerOptions = ['rock', 'paper', 'scissor'];
 
@@ -22,7 +23,6 @@ scissors.addEventListener("click", () => {
 });
 
 function playGame() {
-    buttons.classList.add('none');
     const computersChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
     console.log(`Player: ${player}`);
     console.log(`Computer: ${computersChoice}`);
