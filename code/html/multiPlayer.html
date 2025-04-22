@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Multiplayer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>RockPaperScissorsJS</h1>
+        <h2>Multiplayer Game</h2>
+        
+        <div id="info" class="info-box">
+            Connecting to server...
+        </div>
+        
+        <div id="connection-panel">
+            <div class="connection-option">
+                <h3>Create New Game</h3>
+                <button id="create-game" class="action-btn">Create Game</button>
+                <div id="invite-code" class="code-display" style="display: none;">
+                    <p>Share this code with your friend:</p>
+                    <div class="code-value"></div>
+                    <button id="copy-code" class="small-btn">Copy</button>
+                </div>
+            </div>
+            
+            <div class="connection-option">
+                <h3>Join Game</h3>
+                <div class="input-group">
+                    <input type="text" id="join-code" placeholder="Enter invite code">
+                    <button id="join-game" class="action-btn">Join</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-container" style="display: none;">
+            <h3 id="game-status">Waiting for opponent...</h3>
+            
+            <div id="buttons" class="game-buttons">
+                <button id="rock" class="choice-btn">
+                    <img src="../img/rock.png" alt="Rock">
+                    <span>Rock</span>
+                </button>
+                <button id="paper" class="choice-btn">
+                    <img src="../img/paper.png" alt="Paper">
+                    <span>Paper</span>
+                </button>
+                <button id="scissors" class="choice-btn">
+                    <img src="../img/scissors.png" alt="Scissors">
+                    <span>Scissors</span>
+                </button>
+            </div>
+            
+            <div id="result" class="result-display"></div>
+        </div>
+        
+        <div class="back-section">
+            <a href="../../index.html" class="back-link">Back to Menu</a>
+        </div>
+    </div>
+
+    <script src="../js/websocket.js"></script>
+    <script src="../js/multiplayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Single Player</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div id="info" class="info-box">
+            Choose rock, paper, or scissors to play against the computer!
+        </div>
+        
+        <h2 id="h2">Play against Computer</h2>
+        
+        <div id="buttons" class="game-buttons">
+            <button id="rock" class="choice-btn">
+                <img src="../img/rock.png" alt="Rock">
+                <span>Rock</span>
+            </button>
+            <button id="paper" class="choice-btn">
+                <img src="../img/paper.png" alt="Paper">
+                <span>Paper</span>
+            </button>
+            <button id="scissors" class="choice-btn">
+                <img src="../img/scissors.png" alt="Scissors">
+                <span>Scissors</span>
+            </button>
+        </div>
+        
+        <div class="back-section">
+            <a href="../../index.html" class="back-link">Back to Menu</a>
+        </div>
+    </div>
+
+    <script>
+        const gameMode = 'vsComputer';
+    </script>
+    <script src="../js/gamePlay.js"></script>
+</body>
+</html>
