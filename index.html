@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./code/style.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./code/css/style.css">
 </head>
 <body>
-    <div id="info" class="info">
-        <h1>RockPaperScissorsJS</h1>
-        <h2 id="h2">Choose your choice</h2>
-        <div id="buttons" class="buttons">
-            <img src="./code/img/rock.png" id="rock" alt="Choose an image">
-            <img src="./code/img/paper.png" id="paper" alt="Choose an image">
-            <img src="./code/img/scissors.png" id="scissors" alt="Choose an image">
+    <div class="dashboard">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div id="info" class="info-box">
+            Select a game mode to start playing!
+        </div>
+        
+        <h2>Game Modes</h2>
+        
+        <div class="links">
+            <a href="./code/html/singleplayer.html">
+                <h4 id="singleSelect">
+                    vs Computer
+                </h4>
+            </a>
+            <a href="./code/html/multiplayer.html">
+                <h4 id="multiSelect">
+                    Multiplayer
+                </h4>
+            </a>
+        </div>
+        
+        <div class="game-preview">
+            <p class="preview-text">Challenge your friends or play against the computer in the classic game of Rock Paper Scissors!</p>
         </div>
     </div>
-    
-    <script src="./code/script.js"></script>
+
+    <script src="./code/js/index.js"></script>
 </body>
 </html>
